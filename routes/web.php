@@ -24,4 +24,8 @@ Route::view('/authenticated', 'authenticated')->name('authenticated');
 Route::get('/include', [HomeController::class, 'include'])->name('include');
 Route::view('/layout', 'layout')->name('layout');
 
+Route::group(['prefix' => 'admin'], function() {
+    //
+});
+
 require __DIR__.'/auth.php';
