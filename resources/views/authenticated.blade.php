@@ -14,9 +14,9 @@
                     @auth
                     Yes, I am logged in as {{ auth()->user()->email }}.
                     @endauthh
-                    @guest 
+                    @else
                     No, I am not logged in.
-                    @endguest
+                    @endauth
                 </div>
             </div>
         </div>
